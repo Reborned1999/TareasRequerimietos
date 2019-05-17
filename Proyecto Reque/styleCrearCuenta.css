@@ -1,0 +1,147 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background:white;
+}
+
+.box{
+  font-family: helvetica;
+  width: 350px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #757575;
+}
+.box h1{
+  color: black;
+  font-size: 24px;
+  /*text-transform: uppercase;*/
+  font-weight: 500;
+}
+
+.box img{
+  width: 30px;
+  height: 30px; 
+}
+
+.box a{
+  color: #3953FF;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+.box b{
+  font-weight: normal;
+}
+
+.box h3{
+  margin-top: 10px;
+  margin-right: 5px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.box input[type = "text"], .box input[type = "password"], .box input[type = "date"]{
+  border:0;
+  background: #EFEFEF;
+  display: block;
+  /*margin: 20px auto;*/
+  margin-top:  10px;
+  margin-bottom: 0px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 14px 10px;
+  width: 150px;
+  height: 10px;
+  outline: none;
+  font-size: 14px;
+  color: gray;
+  border-radius:5px;
+  transition: 0.25s;
+}
+
+.box input[type = "textLarge"]{
+  border:0;
+  background: #EFEFEF;
+  display: block;
+  /*margin: 20px auto;*/
+  margin-top:  10px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 14px 10px;
+  width: 332px;
+  height: 10px;
+  outline: none;
+  font-size: 14px;
+  color: gray;
+  border-radius:5px;
+  transition: 0.25s;
+}
+
+.box select{
+  border:0;
+  background: #EFEFEF;
+  display: block;
+  margin-top:  10px;
+  margin: 0px;
+  text-align: center;
+  border: 1px solid gray;
+  width: 174px;
+  height: 40px;
+  outline: none;
+  font-size: 14px;
+  color: gray;
+  border-radius:5px;
+  transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type = "textLarge"]:focus{
+  border: 2px solid #3498db;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: #3953FF;
+  display: block;
+  margin-left: 90px;
+  margin-bottom: 7px;
+  text-align: center;
+  font-weight: bold;
+  /*border: 2px solid #2ecc71;*/
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #5B71FF;
+}
+
+.container{
+  width:400px;
+  display: table;
+  box-sizing: border-box;
+}
+
+.row{
+  margin:0px 0;
+}
+
+.column{
+  display: table-cell;
+  float: left;
+  width: 45%;
+  margin-bottom: 7px;
+  text-align: center;
+  color: gray;
+  vertical-align: middle;
+}

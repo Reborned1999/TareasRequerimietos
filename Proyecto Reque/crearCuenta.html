@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proyecto Reque</title>
+    <link rel="stylesheet" href="styleCrearCuenta.css">
+  </head>
+  <body>
+<!--action="index.html"--> 
+<form class="box" action="registro.php" method="post">
+  <img src="images/colorDots.png" alt="Dots">
+  <h1>Crear Cuenta</h1>
+
+  <input type="textLarge" name="nombre" placeholder="Nombre" required>
+<!--</br>-->
+</br>
+<!-- Container de nombre y apellidos--> 
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <input type="text" name="apellido1" placeholder="Primer Apellido" required>
+      </div>
+      <div class="column">
+        <input type="text" name="apellido2" placeholder="Segundo Apellido" required>
+      </div>
+    </div>
+  </div>
+  <input type="textLarge" name="nombreUsuario" placeholder="Nombre de Usuario" required>
+<!--</br>-->
+</br>
+<!-- Container de fecha de nacimiento--> 
+ <div class="container">
+    <div class="row">
+      <div class="column">
+        <h3>Fecha de nacimiento</h3>
+      </div>
+      <div class="column">
+         <input type="date" name="bday" required>
+      </div>
+    </div>
+  </div>
+<!-- Container de contrasenas--> 
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <input type="password" name="password" placeholder="Contraseña" required>
+      </div>
+      <div class="column">
+        <input type="password" name="passwordConfirm" placeholder="Confirmar contraseña" required>
+      </div>
+    </div>
+  </div>
+ 
+ <div class="container">
+    <div class="row">
+      <div class="column">
+        <h3>Pregunta de seguridad</h3>
+      </div>
+      <div class="column">
+          <select name="pregunta" required>
+  <option value="1">Comida favorita</option>
+  <option value="2">Arbol favorito</option>
+  <option value="3">Animal favorito</option>
+  <option value="4">Canción favorita</option>
+</select>
+      </div>
+    </div>
+  </div>
+  <input type="textLarge" name="respuestaPregunta" placeholder="Respuesta a pregunta de seguridad" required>
+   </br>
+
+  <input type="submit" name="" value="Crear cuenta">
+  <b>¿Ya tienes una cuenta?</b><a href="index.html"> Iniciar Sesión</a>
+</form>
+
+
+  </body>
+</html>
